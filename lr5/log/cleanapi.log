@@ -1,0 +1,20 @@
+2021-11-30 19:50:32,944 - [INFO] - 200 GET / (::1) 0.82ms
+2021-11-30 19:50:33,068 - [WARNING] - 404 GET /favicon.ico (::1) 0.92ms
+2021-11-30 19:52:53,320 - [INFO] - 200 GET /example2.json (::1) 0.71ms
+2021-11-30 19:54:36,398 - [INFO] - 200 GET / (::1) 0.88ms
+2021-11-30 19:54:46,180 - [INFO] - 200 GET /example2.json (::1) 0.31ms
+2021-11-30 22:31:44,428 - [INFO] - 200 GET / (::1) 0.64ms
+2021-11-30 22:32:56,265 - [INFO] - 304 GET / (::1) 0.64ms
+2021-11-30 22:33:17,811 - [ERROR] - Uncaught exception POST /volume_rectangular (::1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='POST', uri='/volume_rectangular', version='HTTP/1.1', remote_ip='::1')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/tornado/web.py", line 1702, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/mnt/d/desktop/шимко/шимко/./handlers/simple_hadnler3.py", line 16, in post
+    s = str(int(a) * int(b) * int(c))
+ValueError: invalid literal for int() with base 10: 'No data received'
+2021-11-30 22:33:17,813 - [ERROR] - 500 POST /volume_rectangular (::1) 2.34ms
+2021-11-30 22:34:44,251 - [INFO] - 200 POST /volume_rectangular?a=4&b=3&c=5 (::1) 0.62ms
+2021-11-30 23:02:35,374 - [INFO] - 304 GET / (::1) 0.76ms
+2021-11-30 23:05:08,277 - [INFO] - 304 GET / (::1) 0.63ms
+2021-11-30 23:05:40,904 - [INFO] - 200 POST /volume_rectangular?a=4&b=5&c=6 (::1) 0.34ms
